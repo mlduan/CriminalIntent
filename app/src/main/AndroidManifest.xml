@@ -10,16 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CriminalIntent">
         <activity
+            android:name=".SingleFragmentActivity"
+            android:exported="true" />
+        <activity
             android:name=".CrimeActivity"
             android:exported="true"
             android:label="@string/title_activity_crime"
             android:theme="@style/Theme.CriminalIntent.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".CrimeListActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
 
 
     </application>
